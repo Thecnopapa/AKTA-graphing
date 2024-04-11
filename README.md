@@ -5,6 +5,7 @@ Instructions:
 1- Download the R file
 2- Export the raw data from the AKTA in (.csv) - Unforunatelly I haven't worked out a workaround for this step
 3- Open the file with excel and save it as .xlsx in the same folder (or a subforder) as the R file
+   The file name of the .xlsx file will also be the title of the plot
    Data can be saved in any number of subfolders, all will get preocessed, see example:
     - My_Cool_project
       - Akta graphs 1.0.R
@@ -27,7 +28,3 @@ Instructions:
     - Plot size
     - Save folder / Save next to data file
 6- Save and Run the entire file (Ctr + Shift + Enter)
-
-
-
-
