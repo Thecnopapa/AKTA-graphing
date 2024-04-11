@@ -18,7 +18,7 @@ subfolder <- "" # e.g. "/raw_data", process files only in the specified sub fold
 
 
 ## Graphs Customisation ## 
-show_legend = TRUE # TRUE or FALSE, self explanatory
+show_legend = FALSE # TRUE or FALSE, FALSE will also turn all axis black
 legend_inside = TRUE # TRUE for inside the graph, FALSE for outside
 
 legend_x <- 0.95 # Only used when inside the graph
@@ -190,6 +190,8 @@ for (file in files) {
         graph <- graph + theme(legend.position = legend_position)
       }
       
+  }else {
+    graph <- graph + theme(legend.position = "none" )
   }
 
   graph <- graph +   scale_colour_manual(name = "colour",values = c("UV" = main_colour,
